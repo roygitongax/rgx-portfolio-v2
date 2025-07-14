@@ -35,17 +35,14 @@ const Projects = () => {
     },
     {
       title: "Asset Tagging Operations",
-      client: "Quickmart",
+      client: "Quickmart & Pesapal",
       description: "Asset management system enabling efficient tracking and maintenance of retail equipment and infrastructure.",
       image: "/placeholder.svg",
       technologies: [],
       features: [
-        "Bar-code-based asset tracking system",
-        "Mobile scanning capabilities for field operations",
-        "Automated maintenance scheduling and alerts",
+        "Bar-code-based, asset tracking system",
         "Comprehensive asset lifecycle management",
-        "Real-time inventory tracking and reporting",
-        "Integration with existing retail management systems"
+        "Inventory tracking and reporting",
       ],
       icon: Code
     }
