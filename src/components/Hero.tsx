@@ -12,14 +12,16 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen w-full flex flex-col items-center justify-center bg-background px-4 pt-20"
+      className="min-h-screen w-full flex flex-col items-center justify-center bg-background px-4 pt-30"
     >
       <div className="w-full max-w-4xl flex flex-col items-center text-center animate-fade-in">
         {/* Profile Photo Placeholder */}
         <div className="w-48 h-48 mb-8 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center border-4 border-primary/30 animate-scale-in">
-          <div className="w-32 h-32 rounded-full bg-primary/20 flex items-center justify-center">
-            <span className="text-4xl font-bold text-primary">RG</span>
-          </div>
+          <img
+            src="your-image-url-here"
+            alt="Roy Gitonga profile"
+            className="w-32 h-32 rounded-full object-cover"
+          />
         </div>
 
         {/* Name */}
