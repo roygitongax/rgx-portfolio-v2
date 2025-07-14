@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold mb-2 text-gradient-light">Roy Gitonga</h3>
             <p className="text-background/70 text-sm">
-              Technical Architect & IT Professional
+              Aspiring Security Engineer | Asset Audit
             </p>
           </div>
 
@@ -52,28 +52,32 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex justify-center md:justify-end space-x-4">
               <a 
-                href="#" 
+                href="https://github.com/roygitongax" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/roy-gitonga/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="mailto:roy@example.com" 
+                href="mailto:roygitongax@outlook.com" 
                 className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
                 aria-label="Email"
               >
                 <Mail className="w-5 h-5" />
               </a>
               <a 
-                href="tel:+1234567890" 
+                href="tel:+254769873257" 
                 className="p-2 rounded-full bg-background/10 hover:bg-background/20 transition-colors"
                 aria-label="Phone"
               >

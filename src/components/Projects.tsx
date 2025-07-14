@@ -1,8 +1,7 @@
 
-import { ExternalLink, Code, Users, Zap } from 'lucide-react';
+import { Code, Users, Zap } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const projects = [
@@ -39,12 +38,14 @@ const Projects = () => {
       client: "Quickmart",
       description: "Asset management system enabling efficient tracking and maintenance of retail equipment and infrastructure.",
       image: "/placeholder.svg",
-      technologies: ["Power Platform", "QR Code Integration", "Mobile App", "Cloud Storage"],
+      technologies: [],
       features: [
-        "QR code-based asset tracking",
-        "Mobile scanning capabilities",
-        "Maintenance scheduling",
-        "Asset lifecycle management"
+        "QR code-based asset tracking system",
+        "Mobile scanning capabilities for field operations",
+        "Automated maintenance scheduling and alerts",
+        "Comprehensive asset lifecycle management",
+        "Real-time inventory tracking and reporting",
+        "Integration with existing retail management systems"
       ],
       icon: Code
     }
@@ -80,17 +81,19 @@ const Projects = () => {
                 <CardContent className="flex-grow space-y-4">
                   <p className="text-muted-foreground text-sm">{project.description}</p>
 
-                  {/* Technologies */}
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2 text-sm">Technologies</h4>
-                    <div className="flex flex-wrap gap-1">
-                      {project.technologies.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="outline" className="text-xs border-border">
-                          {tech}
-                        </Badge>
-                      ))}
+                  {/* Technologies - only show if there are any */}
+                  {project.technologies.length > 0 && (
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-2 text-sm">Technologies</h4>
+                      <div className="flex flex-wrap gap-1">
+                        {project.technologies.map((tech, techIndex) => (
+                          <Badge key={techIndex} variant="outline" className="text-xs border-border">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  )}
 
                   {/* Key Features */}
                   <div>
@@ -103,18 +106,6 @@ const Projects = () => {
                         </li>
                       ))}
                     </ul>
-                  </div>
-
-                  <div className="pt-4">
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="w-full hover:bg-primary hover:text-black transition-colors border-primary text-primary"
-                      onClick={() => console.log(`View ${project.title} details`)}
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View Details
-                    </Button>
                   </div>
                 </CardContent>
               </Card>

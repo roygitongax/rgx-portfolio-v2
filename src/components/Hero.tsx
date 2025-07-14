@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-background px-4 pt-16">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-background px-4 pt-32">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         {/* Profile Photo Placeholder */}
         <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center border-4 border-primary/30 animate-scale-in">
@@ -27,7 +27,7 @@ const Hero = () => {
 
         {/* Tagline */}
         <h2 className="text-2xl md:text-3xl font-medium mb-4 text-gradient max-w-3xl mx-auto leading-tight">
-          Bridging Technology and Business through Secure, Efficient Solutions
+          Aspiring Security Engineer | Asset Audit
         </h2>
 
         {/* Subheadline */}
@@ -61,29 +61,33 @@ const Hero = () => {
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mb-12">
           <a 
-            href="#" 
-            className="p-3 rounded-full bg-secondary text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+            href="https://github.com/roygitongax" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-secondary text-foreground hover:text-primary transition-all duration-300 hover-lift"
             aria-label="GitHub"
           >
             <Github className="w-6 h-6" />
           </a>
           <a 
-            href="#" 
-            className="p-3 rounded-full bg-secondary text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+            href="https://www.linkedin.com/in/roy-gitonga/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-secondary text-foreground hover:text-primary transition-all duration-300 hover-lift"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-6 h-6" />
           </a>
           <a 
-            href="mailto:roy@example.com" 
-            className="p-3 rounded-full bg-secondary text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+            href="mailto:roygitongax@outlook.com" 
+            className="p-3 rounded-full bg-secondary text-foreground hover:text-primary transition-all duration-300 hover-lift"
             aria-label="Email"
           >
             <Mail className="w-6 h-6" />
           </a>
           <a 
-            href="tel:+1234567890" 
-            className="p-3 rounded-full bg-secondary text-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+            href="tel:+254769873257" 
+            className="p-3 rounded-full bg-secondary text-foreground hover:text-primary transition-all duration-300 hover-lift"
             aria-label="Phone"
           >
             <Phone className="w-6 h-6" />

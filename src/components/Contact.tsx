@@ -8,29 +8,29 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "roy@example.com",
-      href: "mailto:roy@example.com",
+      value: "roygitongax@outlook.com",
+      href: "mailto:roygitongax@outlook.com",
       description: "For professional inquiries and collaborations"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (234) 567-8900",
-      href: "tel:+1234567890",
+      value: "+254 769 873 257",
+      href: "tel:+254769873257",
       description: "Available for direct conversations"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/roygitonga",
-      href: "#",
+      value: "linkedin.com/in/roy-gitonga",
+      href: "https://www.linkedin.com/in/roy-gitonga/",
       description: "Connect for professional networking"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/roygitonga",
-      href: "#",
+      value: "github.com/roygitongax",
+      href: "https://github.com/roygitongax",
       description: "View my code repositories and contributions"
     }
   ];
@@ -59,6 +59,8 @@ const Contact = () => {
                 <CardContent>
                   <a 
                     href={method.href}
+                    target={method.href.startsWith('http') ? '_blank' : undefined}
+                    rel={method.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     className="text-primary hover:text-primary/80 transition-colors font-medium block mb-2"
                   >
                     {method.value}
@@ -84,7 +86,7 @@ const Contact = () => {
                 <Button 
                   size="lg"
                   className="apple-gradient hover:opacity-90 transition-opacity"
-                  onClick={() => window.location.href = 'mailto:roy@example.com?subject=Professional Inquiry'}
+                  onClick={() => window.location.href = 'mailto:roygitongax@outlook.com?subject=Professional Inquiry'}
                 >
                   <Mail className="w-5 h-5 mr-2" />
                   Send Email
@@ -93,7 +95,7 @@ const Contact = () => {
                   size="lg"
                   variant="outline"
                   className="hover:bg-primary hover:text-primary-foreground transition-colors"
-                  onClick={() => window.location.href = 'tel:+1234567890'}
+                  onClick={() => window.location.href = 'tel:+254769873257'}
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now
