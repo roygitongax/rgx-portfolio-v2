@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen w-full flex flex-col items-center justify-center bg-background px-4"
+      className="min-h-screen w-full flex flex-col items-center justify-center bg-background px-4 pt-20"
     >
       <div className="w-full max-w-4xl flex flex-col items-center text-center animate-fade-in">
         {/* Profile Photo Placeholder */}
