@@ -18,7 +18,7 @@ const Hero = () => {
         {/* Profile Photo Placeholder */}
         <div className="w-48 h-48 mb-8 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center border-4 border-primary/30 animate-scale-in">
           <img
-            src="your-image-url-here"
+            src="https://github.com/roygitongax/rgx-portfolio-v2/raw/main/portfolio-headshot.png"
             alt="Roy Gitonga profile"
             className="w-32 h-32 rounded-full object-cover"
           />
