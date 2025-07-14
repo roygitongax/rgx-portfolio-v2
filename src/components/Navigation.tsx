@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -52,7 +51,7 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      navBackground ? 'glass-effect bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
+      navBackground ? 'glass-effect bg-black/90 backdrop-blur-md shadow-lg border-b border-border' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -79,9 +78,8 @@ const Navigation = () => {
               ))}
               <Button 
                 size="sm" 
-                className="apple-gradient hover:opacity-90 transition-opacity"
+                className="apple-gradient hover:opacity-90 transition-opacity text-black font-semibold"
                 onClick={() => {
-                  // Placeholder for CV download
                   console.log('Download CV clicked');
                 }}
               >
@@ -95,7 +93,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-md text-foreground hover:bg-accent"
+              className="p-2 rounded-md text-foreground hover:bg-secondary"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -105,7 +103,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden glass-effect bg-white/95 backdrop-blur-md">
+        <div className="md:hidden glass-effect bg-black/95 backdrop-blur-md border-b border-border">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <button
@@ -113,8 +111,8 @@ const Navigation = () => {
                 onClick={() => scrollToSection(item.id)}
                 className={`block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-200 ${
                   activeSection === item.id
-                    ? 'text-primary bg-accent rounded-md'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-accent rounded-md'
+                    ? 'text-primary bg-secondary rounded-md'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-secondary rounded-md'
                 }`}
               >
                 {item.label}
@@ -122,7 +120,7 @@ const Navigation = () => {
             ))}
             <Button 
               size="sm" 
-              className="apple-gradient hover:opacity-90 transition-opacity w-full mt-2"
+              className="apple-gradient hover:opacity-90 transition-opacity w-full mt-2 text-black font-semibold"
               onClick={() => {
                 console.log('Download CV clicked');
                 setIsMenuOpen(false);

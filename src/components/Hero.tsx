@@ -11,11 +11,11 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-secondary/30 px-4">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-background px-4">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         {/* Profile Photo Placeholder */}
-        <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center border-4 border-primary/20 animate-scale-in">
-          <div className="w-32 h-32 rounded-full bg-primary/10 flex items-center justify-center">
+        <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center border-4 border-primary/30 animate-scale-in">
+          <div className="w-32 h-32 rounded-full bg-primary/20 flex items-center justify-center">
             <span className="text-4xl font-bold text-primary">RG</span>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button 
             size="lg" 
-            className="apple-gradient hover:opacity-90 transition-all duration-300 hover-lift text-lg px-8 py-6"
+            className="apple-gradient hover:opacity-90 transition-all duration-300 hover-lift text-lg px-8 py-6 text-black font-semibold"
             onClick={() => {
               console.log('Download CV clicked');
             }}
@@ -51,7 +51,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="text-lg px-8 py-6 hover-lift"
+            className="text-lg px-8 py-6 hover-lift border-primary text-primary hover:bg-primary hover:text-black"
             onClick={() => scrollToSection('resume')}
           >
             View Resume
@@ -62,28 +62,28 @@ const Hero = () => {
         <div className="flex justify-center space-x-6 mb-12">
           <a 
             href="#" 
-            className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"
+            className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-black transition-all duration-300 hover-lift"
             aria-label="GitHub"
           >
             <Github className="w-6 h-6" />
           </a>
           <a 
             href="#" 
-            className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"
+            className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-black transition-all duration-300 hover-lift"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-6 h-6" />
           </a>
           <a 
             href="mailto:roy@example.com" 
-            className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"
+            className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-black transition-all duration-300 hover-lift"
             aria-label="Email"
           >
             <Mail className="w-6 h-6" />
           </a>
           <a 
             href="tel:+1234567890" 
-            className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"
+            className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-black transition-all duration-300 hover-lift"
             aria-label="Phone"
           >
             <Phone className="w-6 h-6" />

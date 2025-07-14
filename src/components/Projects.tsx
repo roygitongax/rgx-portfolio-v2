@@ -51,7 +51,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-background">
+    <section id="projects" className="py-20 bg-secondary/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Featured Projects</h2>
@@ -64,14 +64,14 @@ const Projects = () => {
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             return (
-              <Card key={index} className="hover-lift h-full flex flex-col">
+              <Card key={index} className="hover-lift h-full flex flex-col bg-card border-border">
                 <CardHeader>
                   {/* Project Image Placeholder */}
-                  <div className="w-full h-48 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg mb-4 flex items-center justify-center">
-                    <IconComponent className="w-16 h-16 text-primary/40" />
+                  <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg mb-4 flex items-center justify-center">
+                    <IconComponent className="w-16 h-16 text-primary/60" />
                   </div>
                   
-                  <CardTitle className="text-xl">
+                  <CardTitle className="text-xl text-foreground">
                     {project.title}
                   </CardTitle>
                   <p className="text-primary font-medium">{project.client}</p>
@@ -85,7 +85,7 @@ const Projects = () => {
                     <h4 className="font-semibold text-foreground mb-2 text-sm">Technologies</h4>
                     <div className="flex flex-wrap gap-1">
                       {project.technologies.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="outline" className="text-xs">
+                        <Badge key={techIndex} variant="outline" className="text-xs border-border">
                           {tech}
                         </Badge>
                       ))}
@@ -109,7 +109,7 @@ const Projects = () => {
                     <Button 
                       variant="outline" 
                       size="sm" 
-                      className="w-full hover:bg-primary hover:text-primary-foreground transition-colors"
+                      className="w-full hover:bg-primary hover:text-black transition-colors border-primary text-primary"
                       onClick={() => console.log(`View ${project.title} details`)}
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
