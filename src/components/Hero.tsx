@@ -1,4 +1,3 @@
-
 import { ArrowDown, Download, Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -11,10 +10,13 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-background px-4 pt-32">
-      <div className="max-w-4xl mx-auto text-center animate-fade-in">
+    <section
+      id="home"
+      className="min-h-screen w-full flex flex-col items-center justify-center bg-background px-4"
+    >
+      <div className="w-full max-w-4xl flex flex-col items-center text-center animate-fade-in">
         {/* Profile Photo Placeholder */}
-        <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center border-4 border-primary/30 animate-scale-in">
+        <div className="w-48 h-48 mb-8 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center border-4 border-primary/30 animate-scale-in">
           <div className="w-32 h-32 rounded-full bg-primary/20 flex items-center justify-center">
             <span className="text-4xl font-bold text-primary">RG</span>
           </div>
@@ -26,7 +28,7 @@ const Hero = () => {
         </h1>
 
         {/* Tagline */}
-        <h2 className="text-2xl md:text-3xl font-medium mb-4 text-gradient max-w-3xl mx-auto leading-tight">
+        <h2 className="text-2xl md:text-3xl font-medium mb-4 text-gradient max-w-3xl leading-tight">
           Aspiring Security Engineer | Asset Audit
         </h2>
 
@@ -90,7 +92,7 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <button 
+        <button
           onClick={() => scrollToSection('resume')}
           className="animate-bounce hover:text-primary transition-colors duration-300"
           aria-label="Scroll to Resume"
