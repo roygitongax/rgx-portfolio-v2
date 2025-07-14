@@ -67,19 +67,19 @@ const Resume = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <a href="tel:+1234567890" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                  <a href="tel:+254769873257" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                     <Phone className="w-4 h-4 mr-3" />
-                    <span>+1 (234) 567-8900</span>
+                    <span>+254 (769) 873-257</span>
                   </a>
-                  <a href="mailto:roy@example.com" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                  <a href="mailto:roygitongax@outlook.com" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                     <Mail className="w-4 h-4 mr-3" />
-                    <span>roy@example.com</span>
+                    <span>roygitongax@outlook.com</span>
                   </a>
-                  <a href="#" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                  <a href="https://www.linkedin.com/in/roy-gitonga/" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                     <Linkedin className="w-4 h-4 mr-3" />
                     <span>LinkedIn Profile</span>
                   </a>
-                  <a href="#" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                  <a href="https://github.com/roygitongax" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                     <Github className="w-4 h-4 mr-3" />
                     <span>GitHub Profile</span>
                   </a>
