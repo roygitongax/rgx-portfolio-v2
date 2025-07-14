@@ -30,11 +30,6 @@ const Hero = () => {
           Aspiring Security Engineer | Asset Audit
         </h2>
 
-        {/* Subheadline */}
-        <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          IT Professional | Cybersecurity Enthusiast | Low-Code Developer
-        </p>
-
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button 
