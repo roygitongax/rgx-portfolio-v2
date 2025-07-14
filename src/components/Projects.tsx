@@ -40,7 +40,7 @@ const Projects = () => {
       image: "/placeholder.svg",
       technologies: [],
       features: [
-        "QR code-based asset tracking system",
+        "Bar-code-based asset tracking system",
         "Mobile scanning capabilities for field operations",
         "Automated maintenance scheduling and alerts",
         "Comprehensive asset lifecycle management",
